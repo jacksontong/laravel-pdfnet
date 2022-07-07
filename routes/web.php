@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    include("/home/sail/PDFNetWrappers/PDFNetC/Lib/PDFNetPHP.php");
+    PDFNet::Initialize("demo:1657185102680:7a45f0f30300000000f671e677e3229b2e3efcb3a19578ae3281af4085");
+    $doc = new PDFDoc();
+    dd($doc);
 });
