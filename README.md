@@ -7,6 +7,7 @@ Install docker + docker compose on your machine, run these commands
 ```bash
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 sail up -d
+sail composer install
 ```
 
 Open [http://localhost](http://localhost)
